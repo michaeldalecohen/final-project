@@ -31,6 +31,12 @@ a {
 	text-decoration: none;
 }
 
+img {
+	max-width: 100%;
+	width: 100%;
+	/*height: auto;*/
+}
+
 /* ----------------------------------------------------------
 
 Helpers
@@ -57,6 +63,24 @@ Helpers
 
 /* ----------------------------------------------------------
 
+Buttons
+
+---------------------------------------------------------- */
+
+.btn {
+	color: #fff;
+	background: #0073b9;
+	display: inline-block;
+	padding: 15px 20px;
+	vertical-align: middle;
+}
+
+.btn:hover {
+	background: #0083d4;
+}
+
+/* ----------------------------------------------------------
+
 Layout
 
 ---------------------------------------------------------- */
@@ -64,6 +88,7 @@ Layout
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	position: relative;
 }
 
 /* ----------------------------------------------------------
@@ -79,6 +104,7 @@ Masthead
 
 .site-name {
 	margin-top: 20px;
+	padding: 0 20px;
 }
 
 .nav {
@@ -103,13 +129,116 @@ Slider
 ---------------------------------------------------------- */
 
 .slider {
-	max-width: 600px;
-	height: auto;
-	margin: 0 auto 30px auto;
+	width: 100%;
 }
 
 #owl-slider .item img {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.owl-pagination {
+	position: absolute;
+	bottom: 50px;
+	text-align: center;
+	left: 0;
+	width: 100%;
+}
+
+.owl-prev {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	
+}
+
+.owl-next {
+	position: absolute;
+	top: 50%;
+	right: 0;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+	width: 50px;
+	height: 100px;
+	background: silver;
+	margin: -50px 0 0 0;
+	border-radius: 0;
+	opacity: 1;
+	font-size: 25px;
+	line-height: 100px;
+	text-align: center;
+}
+
+.owl-theme .owl-controls {
+	margin-top: 0;
+}
+
+.owl-theme .owl-controls .owl-page span {
+	background: #c71444;
+}
+
+/* ----------------------------------------------------------
+
+Content
+
+---------------------------------------------------------- */
+
+.content {
+	width: 100%;
+	background: #d4d4d4;
+}
+
+.main-content {
+	width: 50%;
+	padding: 30px 20px 30px 60px;
+}
+
+.main-img {
+	width: 50%;
+	padding: 30px 60px 30px 20px;
+}
+
+/*.second-content {
+	padding: ;
+}*/
+
+/*.container .main-content:nth-child(even) {
+	padding: 30px 60px 30px 20px;
+}
+
+.container .main-img:nth-child(even) {
+	padding: 30px 20px 30px 60px;
+}*/
+
+/*.second-img*/
+
+/*.main-content:nth-of-type(2n) {
+	width: 50%;
+	padding: 30px 60px 30px 20px;
+}*/
+
+
+
+/*.main-img:nth-of-type(odd) {
+	width: 50%;
+	padding: 30px 20px 30px 60px;
+}*/
+
+.left-arrow, .right-arrow {
+	font-size: 45px;
+	margin-top: -22.5px;
+}
+
+.left-arrow {
+	position: absolute;
+	top: 50%;
+	left: 0;
+}
+
+.right-arrow {
+	position: absolute;
+	top: 50%;
+	right: 0;
 }
