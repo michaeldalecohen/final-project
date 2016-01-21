@@ -10,6 +10,28 @@ $(function() {
 	 
   	});
 	
+		$(".content-carousel").owlCarousel({
+		 
+			navigation : false, // Show next and prev buttons
+			slideSpeed : 300,
+			paginationSpeed : 400,
+			singleItem : true,
+			autoHeight : true,
+			pagination: false
+			
+		 
+	  	});
+
+		var r31 = $(".content-carousel").data('owlCarousel');
+
+		$('#overview').on('click', function() {
+			r31.goTo(0);
+		});
+
+	  	$('#r31-specs').on('click', function() {
+	  		r31.goTo(2);
+	  	});
+
 	function filterPath(string) {
 	  return string
 	    .replace(/^\//,'')

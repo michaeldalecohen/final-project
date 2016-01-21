@@ -73,10 +73,15 @@ Buttons
 	display: inline-block;
 	padding: 15px 20px;
 	vertical-align: middle;
+	border: none;
 }
 
 .btn:hover {
 	background: #0083d4;
+}
+
+.btn:focus {
+	outline: thin dotted;
 }
 
 /* ----------------------------------------------------------
@@ -140,7 +145,7 @@ Slider
 
 .owl-pagination {
 	position: absolute;
-	bottom: 50px;
+	bottom: 20px;
 	text-align: center;
 	left: 0;
 	width: 100%;
@@ -192,38 +197,41 @@ Content
 
 .main-content {
 	width: 50%;
-	padding: 30px 20px 30px 60px;
+	padding: 30px 20px;
 }
 
 .main-img {
 	width: 50%;
+	padding: 30px 20px;
+}
+
+.slide-buttons {
+	text-align: center;
+	border: 2px solid red;
+}
+
+#overview {
+	
+}
+
+#r31-specs {
+	
+}
+
+/*.content:nth-child(even) > .container .main-content {
 	padding: 30px 60px 30px 20px;
 }
 
-/*.second-content {
-	padding: ;
-}*/
-
-/*.container .main-content:nth-child(even) {
-	padding: 30px 60px 30px 20px;
+.content:nth-child(even) > .container .main-img {
+	padding: 30px 20px 30px 60px;
 }
 
-.container .main-img:nth-child(even) {
-	padding: 30px 20px 30px 60px;
-}*/
+.content:nth-child(even) > .container #overview {
+	margin: 30px 60px 30px 20px;
+}
 
-/*.second-img*/
-
-/*.main-content:nth-of-type(2n) {
-	width: 50%;
-	padding: 30px 60px 30px 20px;
-}*/
-
-
-
-/*.main-img:nth-of-type(odd) {
-	width: 50%;
-	padding: 30px 20px 30px 60px;
+.content:nth-child(even) > .container #r31-specs {
+	margin: 30px 20px 30px 60px;
 }*/
 
 .left-arrow, .right-arrow {
