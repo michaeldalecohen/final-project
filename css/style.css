@@ -32,9 +32,14 @@ a {
 }
 
 img {
-	max-width: 100%;
 	width: 100%;
-	/*height: auto;*/
+	max-width: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #f1f1f1;
+	padding-bottom: 80px;
 }
 
 /* ----------------------------------------------------------
@@ -57,8 +62,20 @@ Helpers
 	float: right;
 }
 
+.center {
+	margin: 0 auto;
+}
+
 .text-center {
 	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
 }
 
 /* ----------------------------------------------------------
@@ -69,7 +86,7 @@ Buttons
 
 .btn {
 	color: #fff;
-	background: #0073b9;
+	background: #666;/*#0073b9*/
 	display: inline-block;
 	padding: 15px 20px;
 	vertical-align: middle;
@@ -84,6 +101,10 @@ Buttons
 	outline: thin dotted;
 }
 
+.btn-active {
+	background: #0083d4;
+}
+
 /* ----------------------------------------------------------
 
 Layout
@@ -92,7 +113,6 @@ Layout
 
 .container {
 	max-width: 1200px;
-	margin: 0 auto;
 	position: relative;
 }
 
@@ -102,30 +122,76 @@ Masthead
 
 ---------------------------------------------------------- */
 
-.masthead {
+header.masthead {
 	width: 100%;
 	background: #d4d4d4;
+	position: fixed;
+	z-index: 100;
+	-moz-box-shadow: 0 1px 2px 2px rgba(1, 1, 1, 0.3);
+	-webkit-box-shadow: 0 1px 2px 2px rgba(1, 1, 1, 0.3);
+	box-shadow: 0 1px 2px 2px rgba(1, 1, 1, 0.3);
 }
 
-.site-name {
-	margin-top: 20px;
+header.masthead #logo {
+	margin: 13px 0;
 	padding: 0 20px;
 }
 
-.nav {
+header.masthead .nav {
 	margin: 38px 0;
 	padding: 0;
 	list-style: none;
 }
 
-.nav a {
+header.masthead .nav a {
 	display: block;
 	padding: 10px 20px;
+	color: #dd0029;
 }
 
-.nav a:hover {
-	color: #444;
+header.masthead .nav a:hover {
+	color: #f7002d;
 }
+
+header.masthead-small {
+	width: 100%;
+	background: #d4d4d4;
+	position: fixed;
+	z-index: 100;
+	-moz-box-shadow: 0 1px 2px 2px rgba(1, 1, 1, 0.3);
+	-webkit-box-shadow: 0 1px 2px 2px rgba(1, 1, 1, 0.3);
+	box-shadow: 0 1px 2px 2px rgba(1, 1, 1, 0.3);
+	height: 80px;
+}
+
+header.masthead-small #logo {
+	width: 80px;
+	height: 59px;
+	margin: 10px 0;
+}
+
+header.masthead-small .nav {
+	margin: 21px 0;
+	padding: 0;
+	list-style: none;
+}
+
+header.masthead-small .nav a {
+	display: block;
+	padding: 10px 20px;
+	color: #dd0029;
+}
+
+header.masthead-small .nav a:hover {
+	color: #f7002d;
+}
+
+/*header, ul, a, img, li {
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+}*/
 
 /* ----------------------------------------------------------
 
@@ -135,6 +201,7 @@ Slider
 
 .slider {
 	width: 100%;
+	padding-top: 114px;
 }
 
 #owl-slider .item img {
@@ -155,13 +222,18 @@ Slider
 	position: absolute;
 	top: 50%;
 	left: 0;
-	
+	-moz-box-shadow: 1px 1px 3px 4px rgba(1, 1, 1, 0.3);
+	-webkit-box-shadow: 1px 1px 3px 4px rgba(1, 1, 1, 0.3);
+	box-shadow: 1px 1px 3px 4px rgba(1, 1, 1, 0.3);
 }
 
 .owl-next {
 	position: absolute;
 	top: 50%;
 	right: 0;
+	-moz-box-shadow: -1px 1px 3px 4px rgba(1, 1, 1, 0.3);
+	-webkit-box-shadow: -1px 1px 3px 4px rgba(1, 1, 1, 0.3);
+	box-shadow: -1px 1px 3px 4px rgba(1, 1, 1, 0.3);
 }
 
 .owl-theme .owl-controls .owl-buttons div {
@@ -193,60 +265,56 @@ Content
 .content {
 	width: 100%;
 	background: #d4d4d4;
+	padding-top: 120px;
+}
+
+.content:nth-child(odd) {
+	background: #f1f1f1;
 }
 
 .main-content {
 	width: 50%;
-	padding: 30px 20px;
+	padding: 100px 20px 30px 20px;
 }
 
 .main-img {
 	width: 50%;
-	padding: 30px 20px;
+	padding: 100px 20px 30px 20px;
+}
+
+.slide {
+	max-width: 800px;
+}
+
+.engine-content {
+	width: 45%;
+	padding: 100px 20px 30px 20px;
+	color: #3a3a2e;
+}
+
+.engine-content h3 {
+	font-size: 25px;
+	margin-bottom: 40px;
+}
+
+.engine-content p {
+	font-size: 18px;
+	margin-bottom: 8px;
+}
+
+.engine-content p:last-child {
+	margin-bottom: 0;
+}
+
+.engine-img {
+	width: 55%;
+	padding: 100px 20px 30px 20px;
+}
+
+.youtube {
+	padding: 100px 20px 30px 20px;
 }
 
 .slide-buttons {
-	text-align: center;
-	border: 2px solid red;
-}
-
-#overview {
-	
-}
-
-#r31-specs {
-	
-}
-
-/*.content:nth-child(even) > .container .main-content {
-	padding: 30px 60px 30px 20px;
-}
-
-.content:nth-child(even) > .container .main-img {
-	padding: 30px 20px 30px 60px;
-}
-
-.content:nth-child(even) > .container #overview {
-	margin: 30px 60px 30px 20px;
-}
-
-.content:nth-child(even) > .container #r31-specs {
-	margin: 30px 20px 30px 60px;
-}*/
-
-.left-arrow, .right-arrow {
-	font-size: 45px;
-	margin-top: -22.5px;
-}
-
-.left-arrow {
-	position: absolute;
-	top: 50%;
-	left: 0;
-}
-
-.right-arrow {
-	position: absolute;
-	top: 50%;
-	right: 0;
+	padding: 0 20px;
 }

@@ -7,6 +7,9 @@
 
 		<title>Nissan Skyline GT-R</title>
 		
+		<!-- Roboto google font -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+
 		<!-- Font Awesome stylesheet -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -24,8 +27,10 @@
 	</head>
 	<body>
 		<header class="masthead clearfix">
-			<div class="container">
-				<h1 class="site-name align-left text-center"><a href="index.html">Nissan Skyline<br>GT-R</a></h1>
+			<div class="container center">
+				<a class="align-left" id="logo" href="index.html" title="Return to the homepage">
+					<img src="img/gtr-logo.png" alt="GT-R Logo">
+				</a>
 				<ul class="nav align-right">
 					<li class="align-left"><a href="#home">Home</a></li>
 					<li class="align-left"><a href="#r31">R31</a></li>
@@ -37,131 +42,223 @@
 			</div><!-- /.container -->
 		</header><!-- /.masthead -->
 
-		<section class="slider">
-			<div id="owl-slider" class="owl-carousel owl-theme">
+		<section class="slider" id="home">
+			<div class="owl-theme" id="owl-slider">
 				<div class="item"><img src="img/r31-slide.jpg" alt="R31 Skyline Slide"></div>
 				<div class="item"><img src="img/r32-slide.jpg" alt="R32 Skyline Slide"></div>
 				<div class="item"><img src="img/r33-slide.jpg" alt="R33 Skyline Slide"></div>
 				<div class="item"><img src="img/r34-slide.jpg" alt="R34 Skyline Slide"></div>
 				<div class="item"><img src="img/r35-slide.jpg" alt="R35 Skyline Slide"></div>
-			</div><!-- /.owl-carousel -->
+			</div><!-- /.owl-theme -->
 		</section><!-- /.slider -->
 		
 		<main class="content" id="r31">
-			<div class="container">
-				<div class="content-carousel">
-					<div class="slide clearfix">
+			<div class="container center">
+				<div class="slide-buttons">
+					<button class="btn btn-active" id="r31-overview"><span class="fa fa-book"></span> Overview</button>
+					<button class="btn" id="r31-specs"><span class="fa fa-bar-chart"></span> Engine Specs</button>
+					<button class="btn" id="r31-video"><span class="fa fa-video-camera"></span> Video Review</button>
+				</div>
+				<div class="content-carousel" id="r31-carousel">
+					<div class="clearfix">
 						<div class="main-content align-left">
-							<h2>R31 Nissan Skyline GT-R</h2>
+							<h2>R31 Nissan Skyline GTS-R</h2>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ligula sapien, pharetra eget accumsan vel, faucibus vitae eros. Aenean fringilla lorem vel nibh sollicitudin lacinia. In augue turpis, pellentesque sed urna sit amet, finibus sollicitudin arcu. Duis at felis aliquam sem ultricies feugiat. Maecenas id leo dui. Ut eu ligula mauris. Proin posuere gravida magna, lacinia laoreet dolor. Nunc nibh tellus, dignissim at dolor non, pharetra varius nibh. Quisque ipsum nulla, dignissim vitae posuere in, ullamcorper nec augue. Fusce convallis sem vitae convallis feugiat. Etiam lobortis in purus in lobortis. Ut convallis nibh eget eros cursus, et gravida ex aliquet.
+								The ultimate version of the R31 was the RB20DET-R powered HR31 GTS-R Coupe of which 800 units were built to allow homologation for Group A Touring Car racing. Introduced in late 1987, it had a reworked version of the normal RB20DET with a much larger turbocharger on a tubular steel exhaust manifold, as well as a much larger front-mounted intercooler boosting power to a factory claimed 210 ps (154 kW), with racing versions making over 430 hp (321 kW) in Group A trim.
 							</p>
-							<a class="btn" href="#car-sales">Car Sales Pricing</a>
+							<a class="btn" href="http://www.carsales.com.au/cars/results?silo=stock&q=(((((SiloType%3d%5bDealer+used+cars%5d)%7c(SiloType%3d%5bDemo+and+near+new+cars%5d))%7c(SiloType%3d%5bPrivate+seller+cars%5d))%26((Make%7b%3d%7d%5bNissan%5d)%7b%26%7d((Model%7b%3d%7d%5bSkyline%5d)%7b%26%7d(Series%7b%3d%7d%5bHR31%5d))))%26(Service%3d%5bCarsales%5d))&vertical=car&WT.z_srchsrcx=makemodel&sortby=TopDeal&cpw=1" target="_blank"><span class="fa fa-car"></span> Car Sales Pricing</a>
 						</div><!-- /.main-content -->
 						<div class="main-img align-right">
 							<img src="img/r31-content.jpg" alt="R31 Skyline Content">
 						</div><!-- /.main-img -->
 					</div>
-					<div class="slide clearfix">
-						<table>
-							<thead>
-								<tr>
-									<th>Nissan Skyline R31 2000 GTSR Specifictions:</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Engine:</td>
-									<td>RB20DET-R</td>
-								</tr>
-								<tr>
-									<td>Horsepower</td>
-									<td>158 kw / 211 bhp</td>
-								</tr>
-								<tr>
-									<td>Camshaft</td>
-									<td>DOHC</td>
-								</tr>
-								<tr>
-									<td>Revolutions Per Minute</td>
-									<td>6400 rpm</td>
-								</tr>
-								<tr>
-									<td>Torque</td>
-									<td>245 N·m</td>
-								</tr>
-								<tr>
-									<td>Turbo</td>
-									<td>Single Intercooled Turbo</td>
-								</tr>
-							</tbody>
-						</table>
+					<div class="slide center clearfix">
+						<div class="engine-content align-left">
+							<h3>R31 Engine: RB20DET-R</h3>
+							<p>Horsepower: 154 kW / 210 hp</p>
+							<p>Camshaft: DOHC</p>
+							<p>Revolutions Per Minute: 6400 rpm</p>
+							<p>Torque: 245 N m</p>
+							<p>Turbo: Single Intercooled Turbo</p>
+						</div>
+						<div class="engine-img align-right">
+							<img src="img/r31-engine.jpg" alt="RB20DET-R Engine">
+						</div>
 					</div>
-				</div>
-				<div class="slide-buttons">
-					<button class="btn" id="overview">Overview</button>
-					<button class="btn" id="r31-specs">Specs</button>
+					<div class="slide center">
+						<div class="youtube">
+							<iframe width="800" height="450" src="https://www.youtube.com/embed/sqmg22UnrVY" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
 				</div>
 			</div><!-- /.container -->
 		</main><!-- /.content -->
 
 		<main class="content" id="r32">
-			<div class="container clearfix">
-				<div class="main-content align-right">
-					<h2>R32 Nissan Skyline GT-R</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ligula sapien, pharetra eget accumsan vel, faucibus vitae eros. Aenean fringilla lorem vel nibh sollicitudin lacinia. In augue turpis, pellentesque sed urna sit amet, finibus sollicitudin arcu. Duis at felis aliquam sem ultricies feugiat. Maecenas id leo dui. Ut eu ligula mauris. Proin posuere gravida magna, lacinia laoreet dolor. Nunc nibh tellus, dignissim at dolor non, pharetra varius nibh. Quisque ipsum nulla, dignissim vitae posuere in, ullamcorper nec augue. Fusce convallis sem vitae convallis feugiat. Etiam lobortis in purus in lobortis. Ut convallis nibh eget eros cursus, et gravida ex aliquet.
-					</p>
-					<a class="btn" href="#car-sales">Car Sales Pricing</a>
-				</div><!-- /.main-content -->
-				<div class="main-img align-left">
-					<img src="img/r32-content.jpg" alt="R32 Skyline Content">
-				</div><!-- /.main-img -->
+			<div class="container center">
+				<div class="slide-buttons">
+					<button class="btn btn-active" id="r32-overview"><span class="fa fa-book"></span> Overview</button>
+					<button class="btn" id="r32-specs"><span class="fa fa-bar-chart"></span> Engine Specs</button>
+					<button class="btn" id="r32-video"><span class="fa fa-video-camera"></span> Video Review</button>
+				</div>
+				<div class="content-carousel" id="r32-carousel">
+					<div class="clearfix">
+						<div class="main-content align-right">
+							<h2>R32 Nissan Skyline GT-R</h2>
+							<p>
+								The R32 GT-R was first produced in 1988 including prototype cars. The first six Nismo's were built in 1989. The other 554 NISMO GT-R's were all built in 1990 and were all Gunmetal Grey in color. The RB26DETT engine actually produced ~320 PS,[citation needed] but it was unstated due to the Japanese car makers' "gentlemen's agreement" not to exceed 280 PS (276 hp). The engine was designed for ~500 hp in racing trim
+							</p>
+							<a class="btn" href="http://www.carsales.com.au/cars/results?silo=stock&q=(((((SiloType%3d%5bDealer+used+cars%5d)%7c(SiloType%3d%5bDemo+and+near+new+cars%5d))%7c(SiloType%3d%5bPrivate+seller+cars%5d))%26((Make%7b%3d%7d%5bNissan%5d)%7b%26%7d(((Model%7b%3d%7d%5bSkyline%5d)%7b%26%7d(Badge%7b%3d%7d%5bGT-R%5d))%7b%26%7d(Series%7b%3d%7d%5bR32%5d))))%26(Service%3d%5bCarsales%5d))&vertical=car&WT.z_srchsrcx=makemodel&sortby=TopDeal&cpw=1" target="_blank"><span class="fa fa-car"></span> Car Sales Pricing</a>
+						</div><!-- /.main-content -->
+						<div class="main-img align-left">
+							<img src="img/r32-content.jpg" alt="R32 Skyline Content">
+						</div><!-- /.main-img -->
+					</div>
+					<div class="slide center clearfix">
+						<div class="engine-content align-right">
+							<h3>R32 Engine: RB26DETT</h3>
+							<p>Horsepower: 206 kW / 276 hp</p>
+							<p>Camshaft: DOHC</p>
+							<p>Revolutions Per Minute: 6800 rpm</p>
+							<p>Torque: 368 N m</p>
+							<p>Turbo: Twin-turbo system</p>
+						</div>
+						<div class="engine-img align-left">
+							<img src="img/r32-engine.jpg" alt="RB26DETT Engine">
+						</div>
+					</div>
+					<div class="slide center">
+						<div class="youtube">
+							<iframe width="800" height="450" src="https://www.youtube.com/embed/prtuAXVvTsM" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
 			</div><!-- /.container -->
 		</main><!-- /.content -->
 
 		<main class="content" id="r33">
-			<div class="container clearfix">
-				<div class="main-content align-left">
-					<h2>R33 Nissan Skyline GT-R</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ligula sapien, pharetra eget accumsan vel, faucibus vitae eros. Aenean fringilla lorem vel nibh sollicitudin lacinia. In augue turpis, pellentesque sed urna sit amet, finibus sollicitudin arcu. Duis at felis aliquam sem ultricies feugiat. Maecenas id leo dui. Ut eu ligula mauris. Proin posuere gravida magna, lacinia laoreet dolor. Nunc nibh tellus, dignissim at dolor non, pharetra varius nibh. Quisque ipsum nulla, dignissim vitae posuere in, ullamcorper nec augue. Fusce convallis sem vitae convallis feugiat. Etiam lobortis in purus in lobortis. Ut convallis nibh eget eros cursus, et gravida ex aliquet.
-					</p>
-					<a class="btn" href="#car-sales">Car Sales Pricing</a>
-				</div><!-- /.main-content -->
-				<div class="main-img align-right">
-					<img src="img/r33-content.jpg" alt="R33 Skyline Content">
-				</div><!-- /.main-img -->
+			<div class="container center">
+				<div class="slide-buttons">
+					<button class="btn btn-active" id="r33-overview"><span class="fa fa-book"></span> Overview</button>
+					<button class="btn" id="r33-specs"><span class="fa fa-bar-chart"></span> Engine Specs</button>
+					<button class="btn" id="r33-video"><span class="fa fa-video-camera"></span> Video Review</button>
+				</div>
+				<div class="content-carousel" id="r33-carousel">
+					<div class="clearfix">
+						<div class="main-content align-left">
+							<h2>R33 Nissan Skyline GT-R</h2>
+							<p>
+								The R33 Skyline was introduced in August 1993. Slightly heavier than the R32, it is available in coupe and sedan bodystyles. All models now used a 6-cylinder engine. Nissan took the unusual step of down-grading the GTS model to have only the RB20E, while the twin-cam of the R32 GTS was discontinued along with the 2.0 L turbo RB20DET.
+							</p>
+							<a class="btn" href="http://www.carsales.com.au/cars/results?q=%28%28%28%28SiloType%3D%5BDealer%20used%20cars%5D%7CSiloType%3D%5BDemo%20and%20near%20new%20cars%5D%29%7CSiloType%3D%5BPrivate%20seller%20cars%5D%29%26Service%3D%5BCarsales%5D%29%26%28Make%3D%5BNissan%5D%26%28Model%3D%5BSkyline%5D%26%28Badge%3D%5BGT-R%5D%26Series%3D%5BBCNR33%5D%29%29%29%29&silo=stock&vertical=car&WT.z_srchsrcx=makemodel&sortby=TopDeal&cpw=1" target="_blank"><span class="fa fa-car"></span> Car Sales Pricing</a>
+						</div><!-- /.main-content -->
+						<div class="main-img align-right">
+							<img src="img/r33-content.jpg" alt="R33 Skyline Content">
+						</div><!-- /.main-img -->
+					</div>
+					<div class="slide center clearfix">
+						<div class="engine-content align-left">
+							<h3>R33 Engine: RB26DETT</h3>
+							<p>Horsepower: 224 kW / 304 hp</p>
+							<p>Camshaft: DOHC</p>
+							<p>Revolutions Per Minute: 6800 rpm</p>
+							<p>Torque: 375 N m</p>
+							<p>Turbo: Twin-turbo system</p>
+						</div>
+						<div class="engine-img align-right">
+							<img src="img/r33-engine.jpg" alt="RB26DETT Engine">
+						</div>
+					</div>
+					<div class="slide center">
+						<div class="youtube">
+							<iframe width="800" height="450" src="https://www.youtube.com/embed/FCxKJENlN0Y" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
 			</div><!-- /.container -->
 		</main><!-- /.content -->
 
 		<main class="content" id="r34">
-			<div class="container clearfix">
-				<div class="main-content align-right">
-					<h2>R34 Nissan Skyline GT-R</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ligula sapien, pharetra eget accumsan vel, faucibus vitae eros. Aenean fringilla lorem vel nibh sollicitudin lacinia. In augue turpis, pellentesque sed urna sit amet, finibus sollicitudin arcu. Duis at felis aliquam sem ultricies feugiat. Maecenas id leo dui. Ut eu ligula mauris. Proin posuere gravida magna, lacinia laoreet dolor. Nunc nibh tellus, dignissim at dolor non, pharetra varius nibh. Quisque ipsum nulla, dignissim vitae posuere in, ullamcorper nec augue. Fusce convallis sem vitae convallis feugiat. Etiam lobortis in purus in lobortis. Ut convallis nibh eget eros cursus, et gravida ex aliquet.
-					</p>
-					<a class="btn" href="#car-sales">Car Sales Pricing</a>
-				</div><!-- /.main-content -->
-				<div class="main-img align-left">
-					<img src="img/r34-content.jpg" alt="R34 Skyline Content">
-				</div><!-- /.main-img -->
+			<div class="container center">
+				<div class="slide-buttons">
+					<button class="btn btn-active" id="r34-overview"><span class="fa fa-book"></span> Overview</button>
+					<button class="btn" id="r34-specs"><span class="fa fa-bar-chart"></span> Engine Specs</button>
+					<button class="btn" id="r34-video"><span class="fa fa-video-camera"></span> Video Review</button>
+				</div>
+				<div class="content-carousel" id="r34-carousel">
+					<div class="clearfix">
+						<div class="main-content align-right">
+							<h2>R34 Nissan Skyline GT-R</h2>
+							<p>
+								The BCNR33 GT-R version also had the same RB26DETT engine that the BNR32 was equipped with, although torque had been improved, due to changes in the turbo compressor aerodynamics, turbo dump pipe, and intercooler. The turbo core changed from a sleeve bearing to a ball bearing, but the turbine itself remained ceramic, except on N1 turbos (steel turbine, sleeve bearing). From the R33 onward, all GT-Rs received Brembo brakes.[36] In 1995 the GT-R received an improved version of the RB26DETT, the ATTESA-ETS four-wheel-drive system, and Super HICAS 4-wheel steering.
+							</p>
+							<a class="btn" href="http://www.carsales.com.au/cars/results?limit=24&q=%28%28%28%28SiloType%3D%5BDealer%20used%20cars%5D%7CSiloType%3D%5BDemo%20and%20near%20new%20cars%5D%29%7CSiloType%3D%5BPrivate%20seller%20cars%5D%29%26Service%3D%5BCarsales%5D%29%26%28Make%3D%5BNissan%5D%26%28Model%3D%5BSkyline%5D%26%28Badge%3D%5BGT-R%5D%26Series%3D%5BBNR34%5D%29%29%29%29&silo=stock&vertical=car&WT.z_srchsrcx=makemodel&sortby=TopDeal&cpw=1" target="_blank"><span class="fa fa-car"></span> Car Sales Pricing</a>
+						</div><!-- /.main-content -->
+						<div class="main-img align-left">
+							<img src="img/r34-content.jpg" alt="R34 Skyline Content">
+						</div><!-- /.main-img -->
+					</div>
+					<div class="slide center clearfix">
+						<div class="engine-content align-right">
+							<h3>R34 Engine: RB26DETT</h3>
+							<p>Horsepower: 244 kW / 327 hp</p>
+							<p>Camshaft: DOHC</p>
+							<p>Revolutions Per Minute: 6800 rpm</p>
+							<p>Torque: 392 N m</p>
+							<p>Turbo: Twin-turbo system</p>
+						</div>
+						<div class="engine-img align-left">
+							<img src="img/r34-engine.jpg" alt="RB26DETT Engine">
+						</div>
+					</div>
+					<div class="slide center">
+						<div class="youtube">
+							<iframe width="800" height="450" src="https://www.youtube.com/embed/LU6y4F4bD8Q" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
 			</div><!-- /.container -->
 		</main><!-- /.content -->
 
 		<main class="content" id="r35">
-			<div class="container clearfix">
-				<div class="main-content align-left">
-					<h2>R35 Nissan Skyline GT-R</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ligula sapien, pharetra eget accumsan vel, faucibus vitae eros. Aenean fringilla lorem vel nibh sollicitudin lacinia. In augue turpis, pellentesque sed urna sit amet, finibus sollicitudin arcu. Duis at felis aliquam sem ultricies feugiat. Maecenas id leo dui. Ut eu ligula mauris. Proin posuere gravida magna, lacinia laoreet dolor. Nunc nibh tellus, dignissim at dolor non, pharetra varius nibh. Quisque ipsum nulla, dignissim vitae posuere in, ullamcorper nec augue. Fusce convallis sem vitae convallis feugiat. Etiam lobortis in purus in lobortis. Ut convallis nibh eget eros cursus, et gravida ex aliquet.
-					</p>
-					<a class="btn" href="#car-sales">Car Sales Pricing</a>
-				</div><!-- /.main-content -->
-				<div class="main-img align-right">
-					<img src="img/r35-content.jpg" alt="R35 Skyline Content">
-				</div><!-- /.main-img -->
+			<div class="container center">
+				<div class="slide-buttons">
+					<button class="btn btn-active" id="r35-overview"><span class="fa fa-book"></span> Overview</button>
+					<button class="btn" id="r35-specs"><span class="fa fa-bar-chart"></span> Engine Specs</button>
+					<button class="btn" id="r35-video"><span class="fa fa-video-camera"></span> Video Review</button>
+				</div>
+				<div class="content-carousel" id="r35-carousel">
+					<div class="clearfix">
+						<div class="main-content align-left">
+							<h2>R35 Nissan Skyline GT-R</h2>
+							<p>
+								
+							</p>
+							<a class="btn" href="http://www.carsales.com.au/cars/results?silo=stock&q=(((((SiloType%3d%5bBrand+new+cars+in+stock%5d)%7c(SiloType%3d%5bBrand+new+cars+available%5d))%7c(SiloType%3d%5bDemo+and+near+new+cars%5d))%26((Make%7b%3d%7d%5bNissan%5d)%7b%26%7d((Model%7b%3d%7d%5bGT-R%5d)%7b%26%7d(Series%7b%3d%7d%5bR35%5d))))%26(Service%3d%5bCarsales%5d))&vertical=car&WT.z_srchsrcx=makemodel&sortby=TopDeal&cpw=1" target="_blank"><span class="fa fa-car"></span> Car Sales Pricing</a>
+						</div><!-- /.main-content -->
+						<div class="main-img align-right">
+							<img src="img/r35-content.jpg" alt="R35 Skyline Content">
+						</div><!-- /.main-img -->
+					</div>
+					<div class="slide center clearfix">
+						<div class="engine-content align-left">
+							<h3>R35 Engine: VR38DETT</h3>
+							<p>Horsepower: 404 kW / 549 hp</p>
+							<p>Camshaft: DOHC</p>
+							<p>Revolutions Per Minute: 6400 rpm</p>
+							<p>Torque: 628 N m</p>
+							<p>Turbo: Twin-turbo system</p>
+						</div>
+						<div class="engine-img align-right">
+							<img src="img/r35-engine.jpg" alt="VR38DETT Engine">
+						</div>
+					</div>
+					<div class="slide center">
+						<div class="youtube">
+							<iframe width="800" height="450" src="https://www.youtube.com/embed/97RIML38yuQ" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
 			</div><!-- /.container -->
 		</main><!-- /.content -->
 
