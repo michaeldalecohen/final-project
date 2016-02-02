@@ -1,0 +1,30 @@
+/* ----------------------------------------------------------
+
+Buttons
+
+---------------------------------------------------------- */
+
+.btn {
+	color: $btn-text;
+	background: $btn-default;/*#0073b9*/
+	display: inline-block;
+	padding: 15px 20px;
+	vertical-align: middle;
+	border: none;
+}
+
+.btn-primary {
+	background: $btn-primary;
+}
+
+.btn:hover {
+	background: $btn-primary;
+}
+
+.btn:focus {
+	outline: thin dotted;
+}
+
+.btn-active {
+	background: $btn-primary;
+}

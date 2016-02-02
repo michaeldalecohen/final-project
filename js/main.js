@@ -1,5 +1,5 @@
 $(function() {
-
+	
 	$(document).on("scroll",function(){
 	    if($(document).scrollTop()>450){
 	        $("header").removeClass("masthead").addClass("masthead-small");

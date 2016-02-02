@@ -1,0 +1,58 @@
+/* ----------------------------------------------------------
+
+Slider
+
+---------------------------------------------------------- */
+
+.slider {
+	width: 100%;
+	padding-top: 114px;
+}
+
+#owl-slider .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.owl-pagination {
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
+	left: 0;
+	width: 100%;
+}
+
+.owl-prev {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	box-shadow: 1px 1px 3px 4px rgba(1, 1, 1, 0.3);
+}
+
+.owl-next {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	box-shadow: -1px 1px 3px 4px rgba(1, 1, 1, 0.3);
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+	width: 50px;
+	height: 100px;
+	background: silver;
+	margin: -50px 0 0 0;
+	border-radius: 0;
+	opacity: 1;
+	font-size: 25px;
+	line-height: 100px;
+	text-align: center;
+}
+
+.owl-theme .owl-controls {
+	margin-top: 0;
+}
+
+.owl-theme .owl-controls .owl-page span {
+	background: #c71444;
+}
